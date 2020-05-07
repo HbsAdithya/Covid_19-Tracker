@@ -1,4 +1,4 @@
-package com.developer.arsltech.covid_19tracker;
+package com.developer.Adithya.covid_19tracker;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -17,13 +17,13 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
+public class MyCustomAdapter extends ArrayAdapter<com.developer.Adithya.covid_19tracker.CountryModel> {
 
     private Context context;
-    private List<CountryModel> countryModelsList;
-    private List<CountryModel> countryModelsListFiltered;
+    private List<com.developer.Adithya.covid_19tracker.CountryModel> countryModelsList;
+    private List<com.developer.Adithya.covid_19tracker.CountryModel> countryModelsListFiltered;
 
-    public MyCustomAdapter( Context context, List<CountryModel> countryModelsList) {
+    public MyCustomAdapter( Context context, List<com.developer.Adithya.covid_19tracker.CountryModel> countryModelsList) {
         super(context, R.layout.list_custom_item,countryModelsList);
 
         this.context = context;
@@ -53,7 +53,7 @@ public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
 
     @Nullable
     @Override
-    public CountryModel getItem(int position) {
+    public com.developer.Adithya.covid_19tracker.CountryModel getItem(int position) {
         return countryModelsListFiltered.get(position);
     }
 
@@ -74,10 +74,10 @@ public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
                     filterResults.values = countryModelsList;
 
                 }else{
-                    List<CountryModel> resultsModel = new ArrayList<>();
+                    List<com.developer.Adithya.covid_19tracker.CountryModel> resultsModel = new ArrayList<>();
                     String searchStr = constraint.toString().toLowerCase();
 
-                    for(CountryModel itemsModel:countryModelsList){
+                    for(com.developer.Adithya.covid_19tracker.CountryModel itemsModel:countryModelsList){
                         if(itemsModel.getCountry().toLowerCase().contains(searchStr)){
                             resultsModel.add(itemsModel);
 
@@ -95,8 +95,8 @@ public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
 
-                countryModelsListFiltered = (List<CountryModel>) results.values;
-                AffectedCountries.countryModelsList = (List<CountryModel>) results.values;
+                countryModelsListFiltered = (List<com.developer.Adithya.covid_19tracker.CountryModel>) results.values;
+                com.developer.Adithya.covid_19tracker.AffectedCountries.countryModelsList = (List<com.developer.Adithya.covid_19tracker.CountryModel>) results.values;
                 notifyDataSetChanged();
 
             }

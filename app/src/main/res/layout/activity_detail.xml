@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgd"
     android:orientation="vertical"
     tools:context=".DetailActivity">
 
@@ -30,7 +31,7 @@
             android:textAlignment="textEnd"
             android:textSize="18sp"
 
-            android:textColor="@color/color_one"
+            android:textColor="@color/textcolor"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:layout_alignParentRight="true"/>
@@ -39,7 +40,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/color_two"
+        android:background="@color/colorPrimaryDark"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />
@@ -66,7 +67,7 @@
             android:textAlignment="textEnd"
             android:textSize="18sp"
 
-            android:textColor="@color/color_one"
+            android:textColor="@color/textcolor"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:layout_alignParentRight="true"/>
@@ -75,7 +76,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/color_two"
+        android:background="@color/colorPrimaryDark"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />
@@ -102,7 +103,7 @@
             android:textAlignment="textEnd"
             android:textSize="18sp"
 
-            android:textColor="@color/color_one"
+            android:textColor="@color/textcolor"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:layout_alignParentRight="true"/>
@@ -111,7 +112,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/color_two"
+        android:background="@color/colorPrimaryDark"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />
@@ -138,7 +139,7 @@
             android:textAlignment="textEnd"
             android:textSize="18sp"
 
-            android:textColor="@color/color_one"
+            android:textColor="@color/textcolor"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:layout_alignParentRight="true"/>
@@ -147,7 +148,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/color_two"
+        android:background="@color/colorPrimaryDark"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />
@@ -174,7 +175,7 @@
             android:textAlignment="textEnd"
             android:textSize="18sp"
 
-            android:textColor="@color/color_one"
+            android:textColor="@color/textcolor"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:layout_alignParentRight="true"/>
@@ -183,7 +184,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/color_two"
+        android:background="@color/colorPrimaryDark"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />
@@ -210,7 +211,7 @@
             android:textAlignment="textEnd"
             android:textSize="18sp"
 
-            android:textColor="@color/color_one"
+            android:textColor="@color/textcolor"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:layout_alignParentRight="true"/>
@@ -219,7 +220,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/color_two"
+        android:background="@color/colorPrimaryDark"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />
@@ -246,7 +247,7 @@
             android:textAlignment="textEnd"
             android:textSize="18sp"
 
-            android:textColor="@color/color_one"
+            android:textColor="@color/textcolor"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:layout_alignParentRight="true"/>
@@ -255,7 +256,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/color_two"
+        android:background="@color/colorPrimaryDark"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />
@@ -281,7 +282,7 @@
             android:id="@+id/tvCritical"
             android:textAlignment="textEnd"
             android:textSize="18sp"
-            android:textColor="@color/color_one"
+            android:textColor="@color/textcolor"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:layout_alignParentRight="true"/>
@@ -290,7 +291,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/color_two"
+        android:background="@color/colorPrimaryDark"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />

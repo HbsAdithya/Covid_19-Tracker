@@ -1,4 +1,4 @@
-package com.developer.arsltech.covid_19tracker;
+package com.developer.Adithya.covid_19tracker;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.developer.arsltech.covid_19tracker", appContext.getPackageName());
+        assertEquals("com.developer.Adithya.covid_19tracker", appContext.getPackageName());
     }
 }

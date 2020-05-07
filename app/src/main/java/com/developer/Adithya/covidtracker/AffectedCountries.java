@@ -1,10 +1,9 @@
-package com.developer.arsltech.covid_19tracker;
+package com.developer.Adithya.covid_19tracker;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -23,7 +22,6 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.leo.simplearcloader.SimpleArcLoader;
 
-import org.eazegraph.lib.models.PieModel;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -37,9 +35,9 @@ public class AffectedCountries extends AppCompatActivity {
     ListView listView;
     SimpleArcLoader simpleArcLoader;
 
-    public static List<CountryModel> countryModelsList = new ArrayList<>();
-    CountryModel countryModel;
-    MyCustomAdapter myCustomAdapter;
+    public static List<com.developer.Adithya.covid_19tracker.CountryModel> countryModelsList = new ArrayList<>();
+    com.developer.Adithya.covid_19tracker.CountryModel countryModel;
+    com.developer.Adithya.covid_19tracker.MyCustomAdapter myCustomAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +57,7 @@ public class AffectedCountries extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                startActivity(new Intent(getApplicationContext(),DetailActivity.class).putExtra("position",position));
+                startActivity(new Intent(getApplicationContext(), com.developer.Adithya.covid_19tracker.DetailActivity.class).putExtra("position",position));
             }
         });
 
@@ -124,13 +122,13 @@ public class AffectedCountries extends AppCompatActivity {
                                 JSONObject object = jsonObject.getJSONObject("countryInfo");
                                 String flagUrl = object.getString("flag");
 
-                                countryModel = new CountryModel(flagUrl,countryName,cases,todayCases,deaths,todayDeaths,recovered,active,critical);
+                                countryModel = new com.developer.Adithya.covid_19tracker.CountryModel(flagUrl,countryName,cases,todayCases,deaths,todayDeaths,recovered,active,critical);
                                 countryModelsList.add(countryModel);
 
 
                             }
 
-                                myCustomAdapter = new MyCustomAdapter(AffectedCountries.this,countryModelsList);
+                                myCustomAdapter = new com.developer.Adithya.covid_19tracker.MyCustomAdapter(AffectedCountries.this,countryModelsList);
                                 listView.setAdapter(myCustomAdapter);
                                 simpleArcLoader.stop();
                                 simpleArcLoader.setVisibility(View.GONE);

@@ -1,4 +1,4 @@
-package com.developer.arsltech.covid_19tracker;
+package com.developer.Adithya.covid_19tracker;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +20,7 @@ public class DetailActivity extends AppCompatActivity {
         Intent intent = getIntent();
         positionCountry = intent.getIntExtra("position",0);
 
-        getSupportActionBar().setTitle("Details of "+AffectedCountries.countryModelsList.get(positionCountry).getCountry());
+        getSupportActionBar().setTitle("Details of "+ com.developer.Adithya.covid_19tracker.AffectedCountries.countryModelsList.get(positionCountry).getCountry());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
@@ -35,14 +35,14 @@ public class DetailActivity extends AppCompatActivity {
         tvTotalDeaths = findViewById(R.id.tvDeaths);
         tvTodayDeaths = findViewById(R.id.tvTodayDeaths);
 
-        tvCountry.setText(AffectedCountries.countryModelsList.get(positionCountry).getCountry());
-        tvCases.setText(AffectedCountries.countryModelsList.get(positionCountry).getCases());
-        tvRecovered.setText(AffectedCountries.countryModelsList.get(positionCountry).getRecovered());
-        tvCritical.setText(AffectedCountries.countryModelsList.get(positionCountry).getCritical());
-        tvActive.setText(AffectedCountries.countryModelsList.get(positionCountry).getActive());
-        tvTodayCases.setText(AffectedCountries.countryModelsList.get(positionCountry).getTodayCases());
-        tvTotalDeaths.setText(AffectedCountries.countryModelsList.get(positionCountry).getDeaths());
-        tvTodayDeaths.setText(AffectedCountries.countryModelsList.get(positionCountry).getTodayDeaths());
+        tvCountry.setText(com.developer.Adithya.covid_19tracker.AffectedCountries.countryModelsList.get(positionCountry).getCountry());
+        tvCases.setText(com.developer.Adithya.covid_19tracker.AffectedCountries.countryModelsList.get(positionCountry).getCases());
+        tvRecovered.setText(com.developer.Adithya.covid_19tracker.AffectedCountries.countryModelsList.get(positionCountry).getRecovered());
+        tvCritical.setText(com.developer.Adithya.covid_19tracker.AffectedCountries.countryModelsList.get(positionCountry).getCritical());
+        tvActive.setText(com.developer.Adithya.covid_19tracker.AffectedCountries.countryModelsList.get(positionCountry).getActive());
+        tvTodayCases.setText(com.developer.Adithya.covid_19tracker.AffectedCountries.countryModelsList.get(positionCountry).getTodayCases());
+        tvTotalDeaths.setText(com.developer.Adithya.covid_19tracker.AffectedCountries.countryModelsList.get(positionCountry).getDeaths());
+        tvTodayDeaths.setText(com.developer.Adithya.covid_19tracker.AffectedCountries.countryModelsList.get(positionCountry).getTodayDeaths());
 
 
     }
